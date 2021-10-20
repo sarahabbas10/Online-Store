@@ -1,0 +1,256 @@
+.row,
+.containar {
+    position: relative;
+    text-align: center;
+}
+
+.logoimg {
+    width: 60%;
+}
+
+#h1 {
+    font-size: 30px;
+}
+
+.cart {
+    position: relative;
+    text-align: right;
+    margin-right: 40%;
+}
+
+.btn,
+.pur,
+.allP1,
+.cart1,
+.remove1 {
+    background: linear-gradient(to bottom right, #c6dfe6, #61a0c5);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #202020;
+    padding: 15px;
+    text-align: center;
+}
+
+.pur {
+    margin-left: 40%;
+}
+
+.remove1 {
+    background: rgb(219, 69, 69);
+    color: white;
+    width: 100px;
+    margin-left: 10%;
+}
+
+#grid-container,
+#grid-container1,
+#grid-container2 {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto;
+    padding: 0px;
+}
+
+.cart-row {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.grid-item {
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.formCart {
+    background-color: rgba(203, 233, 175, 0.726);
+    border-radius: 20px;
+    font-family: 'Open Sans';
+}
+
+.cart-item {
+    /* margin: auto; */
+    width: 90%;
+    height: 70%;
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(203, 233, 175, 0.726);
+    border: 0;
+    /* padding: 5px; */
+    text-align: center;
+}
+
+.cart-items {
+    background-color: rgba(203, 233, 175, 0.726);
+    border: 0;
+    /* padding: 5px; */
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    height: 50%;
+    text-align: left;
+}
+
+.itemColumn {
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: 900;
+    color: #202020;
+}
+
+.model {
+    margin-left: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: #202020;
+}
+
+.pricelColumn {
+    margin-left: 16%;
+    font-size: 30px;
+    font-weight: 900;
+    color: #202020;
+}
+
+.cartColumn {
+    margin-left: 0%;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (min-width:800px) {
+    #grid-container,
+    #grid-container1,
+    #grid-container2 {
+        grid-template-columns: auto auto auto auto;
+    }
+    .logoimg {
+        width: 80%;
+    }
+    #h1 {
+        font-size: 60px;
+    }
+    .phone {
+        width: 50%;
+    }
+    .cart {
+        margin-right: 80%;
+    }
+    .btn,
+    .pur {
+        font-size: 30px;
+        font-weight: 900;
+        color: #202020;
+        padding: 35px;
+    }
+    .cart-item {
+        background-color: rgba(203, 233, 175, 0.726);
+        margin: auto;
+        width: 90%;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+    }
+    .cart-items {
+        background-color: rgba(203, 233, 175, 0.726);
+        border: 0;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        height: 80%;
+        text-align: left;
+    }
+    .row,
+    .containar {
+        position: relative;
+        text-align: center;
+    }
+    .itemColumn {
+        margin-left: 5%;
+        font-size: 40px;
+        font-weight: 900;
+        color: #202020;
+    }
+    .model {
+        margin-left: 17%;
+        font-size: 40px;
+        font-weight: 900;
+        color: #202020;
+    }
+    .pricelColumn {
+        margin-left: 24%;
+        font-size: 40px;
+        font-weight: 900;
+        color: #202020;
+    }
+    .cartColumn {
+        margin-left: 5%;
+        font-size: 30px;
+        font-weight: 700;
+        color: black;
+    }
+    .remove1 {
+        background: rgb(219, 69, 69);
+        color: white;
+        width: 200px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+
+/*         
+@media screen and (max-width: 300px) {
+    #grid-container {
+        grid-template-columns: auto auto;
+    }
+} */
