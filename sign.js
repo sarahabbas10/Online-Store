@@ -40,22 +40,39 @@ let user1 = {
 }
 localStorage.setItem(num, JSON.stringify(user1));
 num++
-console.log(JSON.parse(localStorage.getItem(0)));
+//console.log(JSON.parse(localStorage.getItem(0)));
 
 
 let userName = document.getElementById('userN')
 let pass = document.getElementById('passwordUser')
 let log1 = document.getElementById('login1')
 let log2 = document.getElementsByClassName('form_button')
-console.log(document.getElementById('l1'));
 
-document.getElementById('log1').addEventListener('click', function() {
+
+function action() {
+    localStorage.setItem(userN, username)
+}
+
+function action2() {
+    localStorage.getItem(header, name)
+}
+//console.log(document.getElementById('b1'));
+
+// document.getElementById('b1').addEventListener('click', con())
+console.log(document.getElementById("login"));
+var formData = document.getElementById("login").serializeObject();
+console.log(formData);
+
+
+function con() {
     for (i = 0; i < num; i++) {
-        console.log('in for ' + JSON.parse(localStorage.getItem(i)));
+        //  console.log(JSON.parse(localStorage.getItem(i)));
+        // console.log('in for ' + JSON.parse(localStorage.getItem(i)));
+        //console.log(userName);
         if (JSON.parse(localStorage.getItem(i)) == userName.value && JSON.parse(localStorage.getItem(i).password) == pass.value) {
             console.log("yaaaaaaas");
         }
         console.log('nooooooooo');
 
     }
-})
+}
