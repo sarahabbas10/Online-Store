@@ -1,3 +1,12 @@
+/* .body {
+    background: url(./bc.jpg);
+    background-size: 100%;
+} */
+
+.phone {
+    width: 30%;
+}
+
 .row,
 .containar {
     position: relative;
@@ -15,7 +24,8 @@
 .cart {
     position: relative;
     text-align: right;
-    margin-right: 40%;
+    margin-right: 50%;
+    margin-left: 10%;
 }
 
 .btn,
@@ -45,7 +55,7 @@
     margin-left: 10%;
 }
 
-#grid-container,
+#grid-container3,
 #grid-container1,
 #grid-container2 {
     display: grid;
@@ -53,6 +63,14 @@
     grid-row-gap: 20px;
     grid-template-columns: auto auto;
     padding: 0px;
+}
+
+.img1 {
+    width: 100px;
+}
+
+.phone {
+    width: 50%;
 }
 
 .cart-row {
@@ -163,10 +181,10 @@ form.example::after {
 }
 
 @media screen and (min-width:800px) {
-    #grid-container,
+    #grid-container3,
     #grid-container1,
     #grid-container2 {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
     }
     .logoimg {
         width: 80%;
@@ -174,11 +192,22 @@ form.example::after {
     #h1 {
         font-size: 60px;
     }
+    .grid-item {
+        background-color: rgb(255, 255, 255);
+        border: 0;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .img1 {
+        width: 250px;
+    }
     .phone {
         width: 50%;
     }
     .cart {
-        margin-right: 80%;
+        margin-right: 70%;
+        margin-left: 5%;
     }
     .btn,
     .pur {
