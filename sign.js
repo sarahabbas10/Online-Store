@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let pass = document.getElementById('passwordUser')
     let log1 = document.getElementById('login1')
     let log2 = document.getElementsByClassName('form_button')
+    let error1 = document.getElementById('form_message-error')
 
     let newuserName = document.getElementById('newUserName')
     let pNewUser1 = document.getElementById('passwordNewUser')
@@ -55,18 +56,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let userN
 
     log2[0].onclick = function con() {
+
+        let e = document.querySelector(".form_message-error");
         let n = userName.value
         let p = pass.value
         console.log('name: ' + n);
         console.log('pass:' + p);
-        for (i = 0; i < 1000; i++) {
-            console.log("name!!! " + (JSON.parse(localStorage.getItem(i)).username));
-
-            console.log("passs !!" + (JSON.parse(localStorage.getItem(i)).password));
-            if ((JSON.parse(localStorage.getItem(i)).username) == n && (JSON.parse(localStorage.getItem(i)).password) == p) {
-                console.log("yaaaaaaas");
+        for (i = 0; i < localStorage.nextUniqueId; i++) {
+            if ((JSON.parse(localStorage.getItem(i)).username) == n && (JSON.parse(localStorage.getItem(i)).password) == p || (JSON.parse(localStorage.getItem(i)).password) == null || (JSON.parse(localStorage.getItem(i)).username) == null) {
+                e.classList.add("m-hidden");
+                window.open("index.html");
             } else {
-                console.log('nooooooooo');
+                e.classList.remove("m-hidden");
             }
 
         }
@@ -84,27 +85,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     log2[1].onclick = function() {
+        let error = document.querySelector(".form_input_error-message")
+        let n = newuserName.value
+        let p = pNewUser1.value
+        let p2 = pNewUser2.value
 
-            let n = newuserName.value
-            let p = pNewUser1.value
-            let p2 = pNewUser2.value
-            console.log(p);
-            console.log(p2);
-            if (p == p2) {
-
-                let users = {
-                    username: n,
-                    password: p
-                }
-                localStorage.setItem(getNextUnique(), JSON.stringify(users));
-
-
-            } else {
-                console.log("pass not match");
+        if (p == p2) {
+            error.classList.add("m-hidden");
+            let users = {
+                username: n,
+                password: p
             }
+            localStorage.setItem(getNextUnique(), JSON.stringify(users));
+            window.open("index.html");
 
-
+        } else {
+            error.classList.remove("m-hidden");
         }
-        // localStorage.clear()
-
+    }
 })

@@ -119,26 +119,7 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?page=2")
 
             })
 
-
-            searchButton.addEventListener('click', function() {
-                    let s = document.getElementById('search-button')
-                    let s2 = s.value
-                    localStorage.setItem('item', JSON.stringify(s2));
-                    console.log('s: ' + s);
-                    for (i = 0; i < json.data.phones.length; i++) {
-                        console.log((json.data.phones[i].phone_name).substring(0, 4));
-                        if ((JSON.parse(localStorage.getItem(i))) == (json.data.phones[i].phone_name).substring(0, 4)) {
-                            console.log('hi');
-                            window.open("https://www.w3schools.com");
-                        } else {
-                            console.log('nooooo');
-                            window.open("sign up in.html");
-                        }
-                    }
-
-                    //search-button
-                })
-                //End
+            //End
         })
     })
 fetch("http://api-mobilespecs.azharimm.site/v2/brands/huawei-phones-58")
@@ -261,26 +242,7 @@ fetch("http://api-mobilespecs.azharimm.site/v2/brands/huawei-phones-58")
 
             })
 
-
-            searchButton.addEventListener('click', function() {
-                    let s = document.getElementById('search-button')
-                    let s2 = s.value
-                    localStorage.setItem('item', JSON.stringify(s2));
-                    console.log('s: ' + s);
-                    for (i = 0; i < json.data.phones.length; i++) {
-                        console.log((json.data.phones[i].phone_name).substring(0, 4));
-                        if ((JSON.parse(localStorage.getItem(i))) == (json.data.phones[i].phone_name).substring(0, 4)) {
-                            console.log('hi');
-                            window.open("https://www.w3schools.com");
-                        } else {
-                            console.log('nooooo');
-                            window.open("sign up in.html");
-                        }
-                    }
-
-                    //search-button
-                })
-                //End
+            //End
         })
     })
 
@@ -400,33 +362,10 @@ fetch("http://api-mobilespecs.azharimm.site/v2/brands/samsung-phones-9")
             }
 
             document.getElementById('mycart').addEventListener('click', function() {
-                window.scrollTo(0, document.body.scrollHeight);
-                document.getElementById("formCart").style.display = "block";
+                    window.scrollTo(0, document.body.scrollHeight);
+                    document.getElementById("formCart").style.display = "block";
 
-            })
-
-
-            searchButton.addEventListener('click', function() {
-                    let s = document.getElementById('search-button')
-                    let s2 = s.value
-                    localStorage.setItem('item', JSON.stringify(s2));
-                    console.log('s: ' + s);
-                    for (i = 0; i < json.data.phones.length; i++) {
-                        console.log((json.data.phones[i].phone_name).substring(0, 4));
-                        if ((JSON.parse(localStorage.getItem(i))) == (json.data.phones[i].phone_name).substring(0, 4)) {
-                            console.log('hi');
-                            window.open("https://www.w3schools.com");
-                        } else {
-                            console.log('nooooo');
-                            window.open("sign up in.html");
-                        }
-                    }
-
-                    //search-button
                 })
                 //End
         })
     })
-
-
-//(JSON.parse(localStorage.getItem(i)).username)

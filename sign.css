@@ -31,7 +31,8 @@
             font: 500 1rem 'Quicksand', sans-serif;
         }
         
-        .form-hidden {
+        .form-hidden,
+        .m-hidden {
             display: none;
         }
         
