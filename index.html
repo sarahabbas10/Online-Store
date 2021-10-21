@@ -28,34 +28,39 @@
     <div class="row">
         <div class="logo-content">
             <img class="logoimg " src="products.jpg">
-            
+
         </div>
     </div>
 
     <br><br>
-   
+    <!-- <form class="example" style="margin:auto;max-width:300px">
+        <input class="input1" type="text" placeholder="Search.." name="search2">
+        <button id='search-button' class="search-button" type="submit"><i class="fa fa-search"></i></button>
+    </form> -->
     <br><br>
     <div class='containar'>
-        <div class="productsF">
-            <img class='phone' src="applep.jpg" alt=""> <br>
-            <button id='apple' class=btn>Apple Products</button>
-        </div>
-        <div id='grid-container1'></div>
-        <br><br>
-        <div class="productsS">
-            <img class='phone' src="huawei.jpg" alt=""><br>
-            <button id='huawei' class=btn>Huawei Products</button>
-        </div>
-        <div id='grid-container2'></div>
-        <br><br>
-        <div class="productsT">
-            <img class='phone' src="samsung.webp" alt=""><br>
-            <button id='samsung' class=btn>Samsung Products</button>
-        </div>
-        <div id='grid-container3'></div>
+        <div class="items ">
+            <div class="productsF">
+                <img class='phone' src="applep.jpg" alt=""> <br>
+                <button id='apple' class=btn>Apple Products</button>
+            </div>
+            <div id='grid-container1'></div>
+            <br><br>
+            <div class="productsS">
+                <img class='phone' src="huawei.jpg" alt=""><br>
+                <button id='huawei' class=btn>Huawei Products</button>
+            </div>
+            <div id='grid-container2'></div>
+            <br><br>
+            <div class="productsT">
+                <img class='phone' src="samsung.webp" alt=""><br>
+                <button id='samsung' class=btn>Samsung Products</button>
+            </div>
+            <div id='grid-container3'></div>
 
-        <br><br>
-        <br><br>
+            <br><br>
+            <br><br>
+        </div>
     </div>
     <div id='formCart' class="formCart">
         <label class='cartColumn'>Shopping Cart</label>
@@ -68,8 +73,30 @@
         <div class="cart-items">
             <label id="total" class='itemColumn'>Total Price: </label>
         </div>
-        <button class="pur">PURCHASE</button>
 
+        <button id='chekout' type="submit" class="pur">Chekout Now</button>
+        <button type="submit" id='continue' class="pur2">Continue Shopping</button>
+
+
+        <div class="info hidden-info">
+            <h3>Pelece enter your information Adress</h3>
+            <form action="/action_page.php">
+                <label for="fname"> Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Phone number</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">City</label>
+                <select id="country" name="country">
+              <option value="australia">Riyadh</option>
+              <option value="canada">Dammam</option>
+              <option value="usa">Jaddah</option>
+            </select>
+
+                <input id='info' type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
 

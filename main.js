@@ -6,6 +6,12 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?page=2")
             //'https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?page=2'
     })
     .then(function(json) {
+        document.getElementById('mycart').addEventListener('click', function() {
+            const item = document.querySelector(".items")
+            item.classList.add("hidden-items");
+            document.getElementById("formCart").style.display = "block";
+
+        })
         document.getElementById("formCart").style.display = "none";
         document.getElementById('apple').addEventListener('click', function() {
 
@@ -40,6 +46,7 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?page=2")
                 pr.innerText = price + ' SAR'
                 let cart = document.createElement('button')
                 cart.id = 'shop'
+                cart.type = "submit"
                 cart.className = 'cart1 '
                 cart.innerText = 'Add to cart'
 
@@ -58,6 +65,7 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?page=2")
                 for (let j = i; j <= i; j++) {
 
                     x.addEventListener('click', function() {
+
 
                         let rra = document.querySelectorAll(".grid-item")
                         let d1 = document.createElement('div')
@@ -114,9 +122,17 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?page=2")
             }
 
             document.getElementById('mycart').addEventListener('click', function() {
-                window.scrollTo(0, document.body.scrollHeight);
+                const item = document.querySelector(".items")
+                item.classList.add("hidden-items");
                 document.getElementById("formCart").style.display = "block";
 
+            })
+            document.getElementById('continue').addEventListener('click', function() {
+                window.open("index.html");
+            })
+            document.getElementById('chekout').addEventListener('click', function() {
+                const formInof = document.querySelector(".info")
+                formInof.classList.remove("hidden-info");
             })
 
             //End
@@ -164,6 +180,7 @@ fetch("http://api-mobilespecs.azharimm.site/v2/brands/huawei-phones-58")
                 let cart = document.createElement('button')
                 cart.id = 'shop'
                 cart.className = 'cart1 '
+                cart.type = "submit"
                 cart.innerText = 'Add to cart'
 
                 g1.appendChild(p1)
@@ -237,9 +254,17 @@ fetch("http://api-mobilespecs.azharimm.site/v2/brands/huawei-phones-58")
             }
 
             document.getElementById('mycart').addEventListener('click', function() {
-                window.scrollTo(0, document.body.scrollHeight);
+                const item = document.querySelector(".items")
+                item.classList.add("hidden-items");
                 document.getElementById("formCart").style.display = "block";
 
+            })
+            document.getElementById('continue').addEventListener('click', function() {
+                window.open("index.html");
+            })
+            document.getElementById('chekout').addEventListener('click', function() {
+                const formInof = document.querySelector(".info")
+                formInof.classList.remove("hidden-info");
             })
 
             //End
@@ -288,6 +313,7 @@ fetch("http://api-mobilespecs.azharimm.site/v2/brands/samsung-phones-9")
                 pr.innerText = price + ' SAR'
                 let cart = document.createElement('button')
                 cart.id = 'shop'
+                cart.type = "submit"
                 cart.className = 'cart1 '
                 cart.innerText = 'Add to cart'
 
@@ -362,10 +388,21 @@ fetch("http://api-mobilespecs.azharimm.site/v2/brands/samsung-phones-9")
             }
 
             document.getElementById('mycart').addEventListener('click', function() {
-                    window.scrollTo(0, document.body.scrollHeight);
-                    document.getElementById("formCart").style.display = "block";
+                const item = document.querySelector(".items")
+                item.classList.add("hidden-items");
+                document.getElementById("formCart").style.display = "block";
+                document.getElementById("formCart").style.display = "block";
+                document.getElementById('mycart').addEventListener('click', function() {
 
                 })
-                //End
+            })
+            document.getElementById('continue').addEventListener('click', function() {
+                window.open("index.html");
+            })
+            document.getElementById('chekout').addEventListener('click', function() {
+                const formInof = document.querySelector(".info")
+                formInof.classList.remove("hidden-info");
+            })
+
         })
     })
